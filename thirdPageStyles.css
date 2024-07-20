@@ -1,0 +1,184 @@
+li {
+    list-style-type: none;
+    text-align: right;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.thirdPage {
+    background-color: #E3E1D5;
+    padding-top: 40px;
+}
+
+.thirdHeader {
+    display: flex;
+    gap: 142px;
+    align-items: center;
+
+}
+
+.thirdText {
+    width: 306px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #499a18;
+}
+
+.thirdBtns {
+    display: flex;
+    gap: 38px;
+}
+
+.thirdBtn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+    border: 2px solid #e06733;
+    border-radius: 10px;
+    width: 158px;
+    height: 44px;
+    background: rgba(224, 103, 51, 0);
+    cursor: pointer;
+}
+
+.thirdPhotos {
+    margin-top: 90px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 46px 105px;
+}
+
+.cards img {
+    display: block;
+}
+
+.fBorder {
+
+    display: flex;
+    flex-direction: column;
+    /* Выровнять подписи вертикально */
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #e3e1d5;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.txtColor {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #e06733;
+    font-family: 'Inika', sans-serif;
+}
+
+.txtSecondStylesUnderPhoto {
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #717171;
+}
+
+.txtBtnStlThird {
+    font-family: 'Inika', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e06733;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* .thirdHeader {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1007px;
+}
+
+.thirdUlList {
+
+    flex-wrap: wrap;
+    display: flex;
+    gap: 38px;
+}
+
+.thirdUlList li button {
+    font-family: "Inika", sans-serif;
+    color: #e06733;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+    border: 2px solid #e06733;
+    border-radius: 10px;
+    width: 161px;
+    height: 50px;
+    background: rgba(224, 103, 51, 0);
+
+}
+
+.thirdText {
+    font-family: "Inika", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #499a18;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 90px;
+}
+
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 250px; 
+    margin: 0 auto; 
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0; 
+}
+
+.photo-item p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000;
+    border-top: 0; 
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+} */

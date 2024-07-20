@@ -1,0 +1,45 @@
+.fivePage {
+    background: #edf2ec;
+    height: 550px;
+    width: 100%;
+}
+
+.fiPageContainer {
+    margin-top: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fiMainTxtStyle {
+    margin-left: -200px;
+    margin-bottom: 350px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #499a18;
+    font-family: "Roboto", sans-serif;
+}
+
+.fiBtnSyle {
+    width: 450px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #d6e7d2;
+    margin-bottom: 170px;
+}
+
+.fiStyleForElemInButton2 {
+    margin: 0 auto;
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fiStyleForTxtInBtn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #717171;
+}

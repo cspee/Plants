@@ -1,0 +1,150 @@
+.fourPage {
+    width: 100%;
+    height: 578px;
+    background: #fff;
+
+}
+
+
+.fourPageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.txtPricesF {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+}
+
+.fBtnsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.fBorderForContainerBtns {
+    border: 1px solid #e3e1d5;
+    border-radius: 20px;
+    width: 332px;
+    height: 282px;
+}
+
+
+.styleForElemInButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.styleForElemInButton2 {
+    margin: 0 auto;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fBorderForBtn {
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    background: #edf2ec;
+}
+
+
+.fStyleForTxtInLeftBtn {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    align-items: flex-end;
+}
+
+
+.fContainerOfRightSide {
+    max-width: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 39px;
+}
+
+.fTxtInRightSide {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: right;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+.gardeners {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: right;
+    color: #499A18;
+    font-family: "Roboto", sans-serif;
+}
+
+.fBtnStyleInRightSide {
+    max-width: 162px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #e06733;
+
+    border: 1px solid #e06733;
+    background: #fff;
+    border-radius: 5px;
+    width: 162px;
+    height: 50px;
+}
+
+.pricesBlock {
+    border-radius: 20px;
+    width: 250px;
+    height: 154px;
+    background: #d6e7d2;
+
+}
+
+.pricesBlockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 85%;
+    border-radius: 20px;
+    width: 250px;
+    height: 154px;
+}
+
+.priceHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
