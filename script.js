@@ -15,10 +15,10 @@ for (let i = 0; i < btns.length; i++) {
                 }
             }
             btns[i].classList.toggle('activeBtnFourPage')
-        }
+        } 
+        
         else if (countActive == 1 && btns[i].classList.contains('activeBtnFourPage')) {
             for (let j = 0; j < cards.length; j++) {
-
                 if (btns[i].dataset.category != cards[j].dataset.category) {
                     cards[j].classList.toggle("blurred")
                 }
@@ -26,7 +26,7 @@ for (let i = 0; i < btns.length; i++) {
             btns[i].classList.toggle('activeBtnFourPage')
         }
 
-        if (countActive == 1) {
+        else if (countActive == 1 && !btns[i].classList.contains('activeBtnFourPage') ) {
 
             for (let j = 0; j < cards.length; j++) {
                 if (btns[i].dataset.category == cards[j].dataset.category) {
