@@ -1,0 +1,247 @@
+
+.cc {
+    header {
+        width: 100%;
+        height: 134px;
+        background: #EDF2EC;
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+    
+    .container {
+        width: 85%;
+        height: 100%;
+        /*????*/
+        margin: 0 auto;
+        max-width: 1220px;
+    
+    }
+    
+    .header_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .ulList {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 46px;
+    }
+    
+    .logo {
+        font-family: "Inika", serif;
+    }
+    
+    .ulList li a {
+        font-family: "Inika", serif;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .ulList li a:hover {
+        color: #e06733;
+    }
+    
+    .welcomeSection {
+    
+        height: 532px;
+        background-color: #EDF2EC;
+        padding: 62px 0;
+        box-sizing: border-box;
+    }
+    
+    .welcomeText {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bigText {
+        font-size: 45px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 111%;
+        font-weight: 700;
+        color: #717171;
+    }
+    
+    .plantsHighlight {
+        color: #499a18;
+    }
+    
+    .smallText {
+    
+        font-family: 'Inika', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 175%;
+        color: #636060;
+    }
+    
+    .mainTextPadding {
+    
+        margin-top: 46px;
+        margin-bottom: 46px;
+    }
+    
+    .mainTextPadding:first-child {
+        margin-top: 0px;
+    }
+    
+    .mainTextPadding:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .welcome {
+        width: 549px;
+    }
+    
+    .but {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        text-align: center;
+        color: #000;
+        border: 2px solid #e06733;
+        border-radius: 10px;
+        width: 158px;
+        height: 44px;
+        background: rgba(224, 103, 51, 0);
+    }
+    
+    
+    
+    .txtColor,
+    .txtSecondStylesUnderPhoto {
+        transition: filter 0.3s ease;
+    
+    }
+    
+    .blurred {
+        filter: blur(4px);
+    }
+}
+header {
+    width: 100%;
+    height: 134px;
+    background: #EDF2EC;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 85%;
+    height: 100%;
+    /*????*/
+    margin: 0 auto;
+    max-width: 1220px;
+
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ulList {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 46px;
+}
+
+.logo {
+    font-family: "Inika", serif;
+}
+
+.ulList li a {
+    font-family: "Inika", serif;
+    text-decoration: none;
+    color: black;
+}
+
+.ulList li a:hover {
+    color: #e06733;
+}
+
+.welcomeSection {
+
+    height: 532px;
+    background-color: #EDF2EC;
+    padding: 62px 0;
+    box-sizing: border-box;
+}
+
+.welcomeText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigText {
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 111%;
+    font-weight: 700;
+    color: #717171;
+}
+
+.plantsHighlight {
+    color: #499a18;
+}
+
+.smallText {
+
+    font-family: 'Inika', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 175%;
+    color: #636060;
+}
+
+.mainTextPadding {
+
+    margin-top: 46px;
+    margin-bottom: 46px;
+}
+
+.mainTextPadding:first-child {
+    margin-top: 0px;
+}
+
+.mainTextPadding:last-child {
+    margin-bottom: 0px;
+}
+
+.welcome {
+    width: 549px;
+}
+
+.but {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+    border: 2px solid #e06733;
+    border-radius: 10px;
+    width: 158px;
+    height: 44px;
+    background: rgba(224, 103, 51, 0);
+}
+
+
+
+.txtColor,
+.txtSecondStylesUnderPhoto {
+    transition: filter 0.3s ease;
+
+}
+
+.blurred {
+    filter: blur(4px);
+}

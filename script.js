@@ -43,7 +43,20 @@ for (let i = 0; i < btns.length; i++) {
             btns[i].classList.toggle('activeBtnFourPage')
         }
 
-        let chekcountActive = document.querySelectorAll('.activeBtnFourPage').length
         console.log(chekcountActive);
     })
+
+    console.log('');
 }
+
+
+function checkScreenSize() {
+    const stylesheet = document.getElementById('style');
+    if (window.innerWidth <= 1100) {
+        stylesheet.disabled = true;
+    } else {
+        stylesheet.disabled = false;
+    }
+}
+window.addEventListener('load', checkScreenSize);
+window.addEventListener('resize', checkScreenSize);
