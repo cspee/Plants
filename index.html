@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="thirdPageStyles.css">
     <link rel="stylesheet" href="fourPageStyles.css">
     <link rel="stylesheet" href="fivePage.css">
+    <link rel="stylesheet" href="lastPageStyles.css">
 
     <title>Document</title>
 </head>
@@ -28,8 +29,13 @@
     <div class="wrapper">
         <header>
             <div class="container header_container">
-                <p class="logo">Plants</p>
-                <nav>
+                <!-- fasfa слово logo не опускается на один уровень с фоткой -->
+                <div class="logoContainer">
+                    <img src="assets/logo_vector.png" class="miniLeaf" alt="logo">
+                    <p class="logo">Plants</p>
+                </div>
+
+                <nav class="navMenu">
                     <ul class="ulList">
                         <li><a href="" class="home">Home</a></li>
                         <li><a href="">About us</a></li>
@@ -38,13 +44,20 @@
                         <li><a href="">Contacts</a></li>
                     </ul>
                 </nav>
+
+                <div class="burgerContainer hidden">
+                    <div class="burgerMenu"></div>
+                    <div class="burgerMenu"></div>
+                    <div class="burgerMenu"></div>
+                    <div class="burgerMenu"></div>
+                </div>
             </div>
         </header>
 
         <section class="welcomeSection">
             <div class="container welcomeText">
                 <div class="pic">
-                    <img src="assets/leafs2.svg" alt="Leafs">
+                    <img src="assets/leafs2.svg" class="bigLeafs" alt="Leafs">
                 </div>
                 <div class="welcome">
                     <p class="bigText mainTextPadding">We grow <span class="plantsHighlight"> plants</span> and give you
@@ -57,39 +70,8 @@
             </div>
         </section>
 
-        <section>
-            <header>
-                <div class="container header_container">
-                    <p class="logo">Plants</p>
-                    <nav>
-                        <ul class="ulList">
-                            <li><a href="" class="home">Home</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Service</a></li>
-                            <li><a href="">Price</a></li>
-                            <li><a href="">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-    
-            <section class="welcomeSection">
-                <div class="container welcomeText">
-                    <div class="pic">
-                        <img src="assets/leafs2.svg" alt="Leafs">
-                    </div>
-                    <div class="welcome">
-                        <p class="bigText mainTextPadding">We grow <span class="plantsHighlight"> plants</span> and give you
-                            oxygen</p>
-                        <p class="smallText mainTextPadding">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                            1500s.</p>
-                        <button class="but mainTextPadding">LEARN MORE</button>
-                    </div>
-                </div>
-            </section>
-        </section>
-        
+
+
 
 
         <section class="secondPage">
@@ -97,6 +79,7 @@
                 <div class="secondText">
                     <p class="secondPageMainText">We are <span class="secondHighlight">professional experienced</span>
                         gardeners</p>
+                    <!-- текст без ширины расползается а не первой страницы нет -->
                     <p class="secondPageText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         printer took a galley of type and scrambled it to make a type specimen book. It has survived not
@@ -104,11 +87,10 @@
                         unchanged. </p>
                 </div>
                 <div class="secPic">
-                    <img src="assets/Vasa.png" alt="Vasa">
+                    <img src="assets/Vasa.png" class="vasa" alt="Vasa">
                 </div>
             </div>
         </section>
-
 
 
 
@@ -126,7 +108,7 @@
 
                 <div class="thirdPhotos">
                     <div class="cards" data-category="Garden care">
-                        <img src="assets/ff1.png" alt="Photo">
+                        <img src="assets/ff1.png" class="cardsPhoto" alt="Photo">
                         <div class="fBorder">
                             <div class="test">
                                 <p class="txtColor">Garden care</p>
@@ -137,7 +119,7 @@
                     </div>
 
                     <div class="cards" data-category="Planting">
-                        <img src="assets/ff2.png" alt= "Photo">
+                        <img src="assets/ff2.png" class="cardsPhoto" alt="Photo">
                         <div class="fBorder">
                             <div class="test">
                                 <p class="txtColor">Planting</p>
@@ -149,7 +131,7 @@
                     </div>
 
                     <div class="cards" data-category="Lawn care">
-                        <img src="assets/ff3.png" alt="Photo">
+                        <img src="assets/ff3.png" class="cardsPhoto" alt="Photo">
 
                         <div class="fBorder">
                             <div class="test">
@@ -161,7 +143,7 @@
                     </div>
 
                     <div class="cards" data-category="Planting">
-                        <img src="assets/ff4.png" alt="Photo">
+                        <img src="assets/ff4.png" class="cardsPhoto" alt="Photo">
                         <div class="fBorder">
                             <div class="test">
                                 <p class="txtColor">Planting</p>
@@ -173,7 +155,7 @@
                     </div>
 
                     <div class="cards" data-category="Garden care">
-                        <img src="assets/ff5.png" alt="Photo">
+                        <img src="assets/ff5.png" class="cardsPhoto" alt="Photo">
                         <div class="fBorder">
                             <div class="test">
                                 <p class="txtColor">Garden care</p>
@@ -185,7 +167,7 @@
                     </div>
 
                     <div class="cards" data-category="Planting">
-                        <img src="assets/ff6.png" alt="Photo">
+                        <img src="assets/ff6.png" class="cardsPhoto" alt="Photo">
                         <div class="fBorder">
                             <div class="test">
                                 <p class="txtColor">Planting</p>
@@ -214,7 +196,7 @@
 
                         <div id="basicsBtn" class="styleForElemInButton fBorderForBtn">
                             <div class="styleForElemInButton2">
-                                <p  class="fStyleForTxtInLeftBtn">Basics</p>
+                                <p class="fStyleForTxtInLeftBtn">Basics</p>
                                 <div class="circle">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +211,7 @@
                         </div>
 
 
-                        <div class="styleForElemInButton fBorderForBtn">
+                        <div id="standardBtn" class="styleForElemInButton fBorderForBtn">
                             <div class="styleForElemInButton2">
                                 <p class="fStyleForTxtInLeftBtn">Standart</p>
                                 <div class="circle">
@@ -245,7 +227,7 @@
                             </div>
                         </div>
 
-                        <div class="styleForElemInButton fBorderForBtn">
+                        <div id="proCareBtn" class="styleForElemInButton fBorderForBtn">
                             <div class="styleForElemInButton2">
                                 <p class="fStyleForTxtInLeftBtn">Pro care</p>
                                 <div class="circle">
@@ -266,13 +248,14 @@
                     </div>
                 </div>
 
-                <div class="pricesBlock  hidden">
+                <div id="pricesBlock" class="pricesBlock  hidden">
                     <div class="pricesBlockContainer">
-            
+
                         <div class="priceHeader">
-                            <p>Prices</p>
+                            <p>Basics</p>
                             <div class="upCircle">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
                                     <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
                                         stroke-linecap="round" />
@@ -280,13 +263,61 @@
                                 </svg>
                             </div>
                         </div>
-            
-                        <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                        <p>$35 / per hour</p>
-            
-                        <p>Order</p>
+
+                        <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently</p>
+                        <p class="secondTxtInPriceBlock">$15 / per hour</p>
+
+                        <p class="orderBtn">Order</p>
                     </div>
-            
+                </div>
+
+                <div id="pricesBlockStand" class="pricesBlock  hidden">
+                    <div class="pricesBlockContainer">
+
+                        <div class="priceHeader">
+                            <p>Standart</p>
+                            <div class="upCircle">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
+                                        stroke-linecap="round" />
+                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently</p>
+                        <p class="secondTxtInPriceBlock">$25 / per hour</p>
+
+                        <p class="orderBtn">Order</p>
+                    </div>
+                </div>
+
+                <div id="pricesBlockPro" class="pricesBlock  hidden">
+                    <div class="pricesBlockContainer">
+
+                        <div class="priceHeader">
+                            <p>Pro care</p>
+                            <div class="upCircle">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
+                                        stroke-linecap="round" />
+                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently</p>
+                        <p class="secondTxtInPriceBlock">$35 / per hour</p>
+
+                        <p class="orderBtn">Order</p>
+                    </div>
                 </div>
 
                 <div class="rightSide">
@@ -301,40 +332,190 @@
                 </div>
 
 
-                
+
 
             </div>
         </section>
 
         <section class="fivePage">
             <div class="container fiPageContainer">
-                <img src="assets/contact_woman 1.png" alt="Woman">
+                <img src="assets/contact_woman 1.png" class="womanPh" alt="Woman">
                 <p class="fiMainTxtStyle">Contact us</p>
 
-                <div class="styleForElemInButton fiBtnSyle ">
-                    <div class="fiStyleForElemInButton2">
-                        <p class="fiStyleForTxtInBtn">City</p>
-                        <div class="circle">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
-                                <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171" stroke-width="0.5"
-                                    stroke-linecap="round" />
-                                <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
-                                    stroke-linecap="round" />
-                            </svg>
+
+                <div class="fiveRightSide">
+                    <div class="fiveCityBtn">
+                        <div class="fiveCityBtnStyle">
+                            <p class="cityTxtBtn">City</p>
+
+                            <div class="circle" id="idCircle">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
+                                    <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171" stroke-width="0.5"
+                                        stroke-linecap="round" />
+                                    <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                                    
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="fiveCityBtn fiveCityBtnActive hidden" id = 'fiveActiveBtn'>
+                        <div class="fiveCityBtnStyle">
+                            <p class="cityTxtBtn">City</p>
+
+                            <div class="upCircle">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
+                                        stroke-linecap="round" />
+                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    
+                    <div class="chooseCityContainer hidden">
+                        <div class="cities">
+                            <p id="canandaiguaBtn" class="textChoosin">Canandaigua, NY</p>
+                            <p id="newYorkBtn" class="textChoosin">New York City</p>
+                            <p id="yonkersBtn" class="textChoosin">Yonkers, NY</p>
+                            <p id="sherrilBtn" class="textChoosin">Sherrill, NY</p>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </section>
 
+            </div>
+    </div>
+
+    <div id="yonkers" class="cityBlock hidden">
+        <div class="cityTexts">
+            <div class="cityTextSyle">
+                <p>City</p>
+                <p>Yonkers, NY</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Phone</p>
+                <p>+1 914 678 0003</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Office adress:</p>
+                <p>511 Warburton Ave, NY</p>
+            </div>
+
+            <div class="cityBtn">
+                <p>Call us</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="canandaigua" class="cityBlock hidden">
+        <div class="cityTexts">
+            <div class="cityTextSyle">
+                <p>City</p>
+                <p>Canandaigua, NY</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Phone</p>
+                <p>+1 914 678 0003</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Office adress:</p>
+                <p>511 Warburton Ave, NY</p>
+            </div>
+
+            <div class="cityBtn">
+                <p>Call us</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sherril" class="cityBlock hidden">
+        <div class="cityTexts">
+            <div class="cityTextSyle">
+                <p>City</p>
+                <p>Sherrill, NY</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Phone</p>
+                <p>+1 914 678 0003</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Office adress:</p>
+                <p>511 Warburton Ave, NY</p>
+            </div>
+
+            <div class="cityBtn">
+                <p>Call us</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="newYork" class="cityBlock hidden">
+        <div class="cityTexts">
+            <div class="cityTextSyle">
+                <p>City</p>
+                <p>New York City</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Phone</p>
+                <p>+1 914 678 0003</p>
+            </div>
+
+            <div class="cityTextSyle">
+                <p>Office adress:</p>
+                <p>511 Warburton Ave, NY</p>
+            </div>
+
+            <div class="cityBtn">
+                <p>Call us</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="lastPage">
+        <div class="container lastPageCont">
+
+            <div class="lastLeftSide">
+                <img src="assets/doge.png" alt="">
+                <p>2022</p>
+                <p>github</p>
+            </div>
+
+            <p class="lastMainTxt">Rolling Scopes School</p>
+
+            <div class="lastRightSide">
+                <img src="assets/inst.png" alt="instImg">
+                <img src="assets/fb.png" alt="">
+                <img src="assets/twitter.png" alt="">
+                <img src="assets/pinterest.png" alt="">
+            </div>
+        </div>
+
+    </section>
 
     </div>
 
 
     <!-- стили в styles -->
+    <script src="scriptFivePage.js"></script>
     <script src="scriptFourPage.js"></script>
     <script src="script.js"></script>
 

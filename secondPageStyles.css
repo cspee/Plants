@@ -20,7 +20,7 @@
     font-size: 40px;
     color: #499a18;
     width: 463px;
-    
+
 }
 
 .secondPageText {
@@ -34,4 +34,60 @@
 
 .secondHighlight {
     color: #E06733;
+}
+
+/* если я делаю медиа запрос в style.css для secodPgae ничего не происходит */
+@media screen and (max-width: 1412px) {
+    .secondPage {
+        height: 783px;
+    }
+
+    .secondPageContainer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px
+    }
+
+    .vasa {
+        width: 250px;
+        height: 258px;
+    }
+
+    .secondText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .secondPageMainText {
+        max-width: 258px;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        color: #499a18;
+    }
+
+    .secondPageText {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        color: #636060;
+        max-width: 330px;
+    }
+
+    .secondPageContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .secondPage {
+        height: 516px;
+    }
+
+    .vasa {
+        width: 150px;
+        height: 147px;
+    }
 }

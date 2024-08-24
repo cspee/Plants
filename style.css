@@ -1,3 +1,5 @@
+@import url(secondPageStyles.css);
+
 body {
     margin: 0;
 }
@@ -40,14 +42,41 @@ header {
     align-items: center;
 }
 
+.logoContainer {
+    display: flex;
+    position: relative;
+}
+
+.miniLeaf {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+
+.logo {
+    font-family: "Inika", serif;
+    margin-top: auto;
+
+}
+
+.burgerContainer{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.burgerMenu {
+    
+    border: 2px solid #717171;
+    width: 40px;
+    height: 0px;
+}
+
 .ulList {
     flex-wrap: wrap;
     display: flex;
     gap: 46px;
-}
-
-.logo {
-    font-family: "Inika", serif;
 }
 
 .ulList li a {
@@ -138,6 +167,96 @@ header {
     filter: blur(4px);
 }
 
-.activeBtnFourPage {
 
+
+
+
+
+@media screen and (max-width: 1412px) {
+
+
+    .welcomeText {
+        flex-direction: row-reverse;
+    }
+
+    .bigText {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 143%;
+    }
+
+    .smallText {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156%;
+    }
+
+    .bigLeafs {
+        max-width: 280px;
+        max-height: 254px;
+    }
+
+    .secondPageContainer {
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .header_container {
+        height: 96px;
+    }
+
+    .welcomeSection {
+        height: 300px;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .bigText {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 140%;
+        color: #717171;
+    }
+
+    .smallText {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156%;
+        color: #636060;
+    }
+
+    .ulList {
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .but {
+        border-radius: 10px;
+        width: 100px;
+        height: 34px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 200%;
+        text-align: center;
+        color: #000;
+    }
+
+    .mainTextPadding {
+        margin: 0px;
+    }
+
+    .bigLeafs {
+        display: none;
+    }
+}
+
+.hideen {
+    display: none;
 }

@@ -9,9 +9,12 @@ a {
 }
 
 .thirdPage {
-    background-color: #E3E1D5;
+    background: #edf2ec;
     padding-top: 40px;
+    height: 1300px;
 }
+
+
 
 .thirdHeader {
     display: flex;
@@ -47,11 +50,13 @@ a {
 }
 
 .thirdPhotos {
+    margin-bottom: 121px;
     margin-top: 90px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     gap: 46px 105px;
+
 }
 
 .cards img {
@@ -85,7 +90,7 @@ a {
 }
 
 .txtSecondStylesUnderPhoto {
-    font-family: "Roboto" ,sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
@@ -104,6 +109,86 @@ a {
     flex-direction: column;
     gap: 10px;
 }
+
+@media screen and (max-width: 1412px) {
+
+    /* width: 281;
+height: 450; */
+    .thirdHeader {
+        flex-direction: column;
+        gap: 40px;
+        align-items: normal;
+    }
+
+    .cardsPhoto {
+        width: 280px;
+    }
+
+    .cards {
+        width: 280px;
+    }
+
+    .thirdPage {
+        height: 1780px;
+    }
+
+    /* если дать max-width: то не получается \\если задать ширину не рабоатет */
+    /* .thirdPhotos {
+        width: 668px;
+    } */
+}
+
+@media screen and (max-width: 790px) {
+    .thirdPage {
+        height: 3150px;
+    }
+
+    .thirdPhotos {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .cardsPhoto {
+        width: 279px;
+        height: 350px;
+    }
+
+    .thirdBtns {
+        flex-wrap: wrap;
+    }
+
+    .thirdText {
+        font-weight: 400;
+        font-size: 25px;
+        color: #499a18;
+    }
+
+    .fBorder {
+        border: 1px #edf2ec;
+        ;
+        border-radius: 0 0 20px 20px;
+        width: 279px;
+        height: 100px;
+    }
+
+    .thirdBtn {
+        border: 1px solid #e06733;
+        border-radius: 5px;
+        width: 121px;
+        height: 35px;
+    }
+
+    .txtBtnStlThird {
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        color: #e06733;
+    }
+
+}
+
+
+
 
 
 

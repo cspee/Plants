@@ -12,7 +12,6 @@
 }
 
 .fiMainTxtStyle {
-    margin-left: -200px;
     margin-bottom: 350px;
     font-weight: 700;
     font-size: 40px;
@@ -20,22 +19,56 @@
     font-family: "Roboto", sans-serif;
 }
 
-.fiBtnSyle {
+.chooseCityContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 234px;
+    background: #dce9d9;
+
+}
+
+.cities {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #dce9d9;
+}
+
+.fiveRightSide {
+    margin-bottom: 150px;
+}
+
+
+
+.fiveCityBtn {
+    top: 500px;
     width: 450px;
     height: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #d6e7d2;
-    margin-bottom: 170px;
+    display: flex;
+    align-items: center;
 }
 
-.fiStyleForElemInButton2 {
-    margin: 0 auto;
-    width: 410px;
+.fiveCityBtnStyle {
     display: flex;
     justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
 }
 
-.fiStyleForTxtInBtn {
+.fiveCityBtnActive {
+    border: 1px  #d6e7d2;
+    background: #c1e698;
+}
+
+/* когда добавляю стили шарик сьезжает */
+
+.cityTxtBtn {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -43,3 +76,107 @@
     letter-spacing: 0.05em;
     color: #717171;
 }
+
+.circle , .upCircle{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.cityBlock {
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 20px; 
+    width: 415px;
+    background: #edf2ec;; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Добавляем отступы внутри блока */
+    border: 1px solid #000;
+}
+
+.cityTexts {
+    width: 100%; /* Растягиваем контейнер */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    gap: 10px; /* Уменьшаем расстояние между элементами */
+    justify-content: center;
+}
+
+.cityTextSyle {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+    gap: 20px; /* Устанавливаем расстояние между меткой и текстом */
+    font-size: 16px;
+    color: #333; /* Цвет текста */
+}
+
+
+
+.cityTextSyle p:first-child {
+    font-weight: bold; /* Жирный шрифт для меток */
+    width: 130px; /* Фиксированная ширина для меток, чтобы текст был выровнен */
+}
+
+.cityTextSyle p:last-child {
+    color: #777; /* Серый цвет для текста */
+}
+
+.cityBtn {
+    border: 1px solid #e06733; /* Оранжевая граница кнопки */
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #e06733;
+    background-color: transparent; /* Прозрачный фон */
+    cursor: pointer;
+    margin-top: 10px; /* Отступ сверху */
+    align-self: center; /* Центрирование кнопки */
+}
+
+.cityBtn p {
+    margin: 0; /* Убираем отступы */
+    text-align: center;
+}
+
+.cityBtn:hover {
+    background-color: #e06733; /* Оранжевый фон при наведении */
+    color: white;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 1412px) {
+
+    .fivePage {
+        height: 739px;
+    }
+
+    .fiPageContainer {
+        height: 739px;
+        flex-direction: column;
+    }
+
+    .fiMainTxtStyle {
+
+        margin-bottom: 100px;
+    }
+
+    .womanPh {
+        width: 200px;
+        height: 250px;
+        order: 3;
+    }
+}
+
