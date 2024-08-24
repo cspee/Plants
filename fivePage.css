@@ -19,7 +19,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.chooseCityContainer{
+.chooseCityContainer {
     position: absolute;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
 }
 
 .fiveRightSide {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 
@@ -62,7 +62,7 @@
 }
 
 .fiveCityBtnActive {
-    border: 1px  #d6e7d2;
+    border: 1px #d6e7d2;
     background: #c1e698;
 }
 
@@ -77,7 +77,8 @@
     color: #717171;
 }
 
-.circle , .upCircle{
+.circle,
+.upCircle {
     display: flex;
     align-items: center;
 }
@@ -92,62 +93,79 @@
 .cityBlock {
     margin-top: 50px;
     position: absolute;
-    border-radius: 20px; 
+    border-radius: 20px;
     width: 415px;
-    background: #edf2ec;; 
+    background: #edf2ec;
+    ;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Добавляем отступы внутри блока */
+    padding: 20px;
+    /* Добавляем отступы внутри блока */
     border: 1px solid #000;
 }
 
 .cityTexts {
-    width: 100%; /* Растягиваем контейнер */
+    width: 100%;
+    /* Растягиваем контейнер */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравнивание по левому краю */
-    gap: 10px; /* Уменьшаем расстояние между элементами */
+    align-items: flex-start;
+    /* Выравнивание по левому краю */
+    gap: 10px;
+    /* Уменьшаем расстояние между элементами */
     justify-content: center;
 }
 
 .cityTextSyle {
     display: flex;
-    justify-content: flex-start; /* Выравнивание элементов по левому краю */
-    gap: 20px; /* Устанавливаем расстояние между меткой и текстом */
+    justify-content: flex-start;
+    /* Выравнивание элементов по левому краю */
+    gap: 20px;
+    /* Устанавливаем расстояние между меткой и текстом */
     font-size: 16px;
-    color: #333; /* Цвет текста */
+    color: #333;
+    /* Цвет текста */
 }
 
 
 
 .cityTextSyle p:first-child {
-    font-weight: bold; /* Жирный шрифт для меток */
-    width: 130px; /* Фиксированная ширина для меток, чтобы текст был выровнен */
+    font-weight: bold;
+    /* Жирный шрифт для меток */
+    width: 130px;
+    /* Фиксированная ширина для меток, чтобы текст был выровнен */
 }
 
 .cityTextSyle p:last-child {
-    color: #777; /* Серый цвет для текста */
+    color: #777;
+    /* Серый цвет для текста */
 }
 
 .cityBtn {
-    border: 1px solid #e06733; /* Оранжевая граница кнопки */
+    border: 1px solid #e06733;
+    /* Оранжевая граница кнопки */
     border-radius: 5px;
     padding: 5px 10px;
     color: #e06733;
-    background-color: transparent; /* Прозрачный фон */
+    background-color: transparent;
+    /* Прозрачный фон */
     cursor: pointer;
-    margin-top: 10px; /* Отступ сверху */
-    align-self: center; /* Центрирование кнопки */
+    margin-top: 10px;
+    /* Отступ сверху */
+    align-self: center;
+    /* Центрирование кнопки */
 }
 
 .cityBtn p {
-    margin: 0; /* Убираем отступы */
+    margin: 0;
+    /* Убираем отступы */
     text-align: center;
 }
 
 .cityBtn:hover {
-    background-color: #e06733; /* Оранжевый фон при наведении */
+    background-color: #e06733;
+    /* Оранжевый фон при наведении */
     color: white;
 }
 
@@ -180,3 +198,9 @@
     }
 }
 
+@media screen and (max-width: 790px) {
+    .fiveCityBtn {
+        width: 300px;
+        height: 50px;
+    }
+}
