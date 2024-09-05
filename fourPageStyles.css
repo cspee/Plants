@@ -139,7 +139,7 @@
     max-width: 85%;
     border-radius: 20px;
     width: 70%;
-    height: 154px;
+    height: 100%;
     gap: 5px;
 }
 
@@ -282,5 +282,22 @@
     .fContainerOfRightSide {
         justify-content: center;
         align-items: center;
+    }
+
+    .headerPriceTxt {
+        font-size: 15px;
+        padding-bottom: 0px;
+    }
+
+    .priceHeader {
+        padding-bottom: 0;
+    }
+
+    .pricesBlockContainer {
+        gap: 2px;
+    }
+
+    .orderBtn {
+        height: 13px;
     }
 }

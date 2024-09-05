@@ -1,5 +1,11 @@
 @import url(secondPageStyles.css);
 
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+
 body {
     margin: 0;
 }
@@ -83,6 +89,7 @@ header {
     font-family: "Inika", serif;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .ulList li a:hover {

@@ -37,15 +37,18 @@
 
                 <nav class="navMenu">
                     <ul class="ulList">
-                        <li><a href="" class="home">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Price</a></li>
-                        <li><a href="">Contacts</a></li>
+                        <li><a  class="home">Home</a></li>
+                        <!-- onclick="location.href='#secondPage'"  >>>  href='#secondPage'  при обновлении страницы в режиме разработчика с испольованием 
+                         scroll-behavior: smooth страница опускатся вниз -->
+                        <li><a href='#secondPage'>About us</a></li>  
+                        <li><a href='#thirdPage'>Service</a></li>
+                        <li><a href='#fourPage'>Price</a></li> 
+                        <li><a href='#fivePage' >Contacts</a></li> 
+                        
                     </ul>
                 </nav>
 
-                <div class="burgerContainer hidden">
+                <div class="burgerContainer ">
                     <div class="burgerMenu"></div>
                     <div class="burgerMenu"></div>
                     <div class="burgerMenu"></div>
@@ -54,7 +57,7 @@
             </div>
         </header>
 
-        <section class="welcomeSection">
+        <section class="welcomeSection" id="firstPage">
             <div class="container welcomeText">
                 <div class="pic">
                     <img src="assets/leafs2.svg" class="bigLeafs" alt="Leafs">
@@ -74,7 +77,7 @@
 
 
 
-        <section class="secondPage">
+        <section class="secondPage" id="secondPage">
             <div class="container secondPageContainer">
                 <div class="secondText">
                     <p class="secondPageMainText">We are <span class="secondHighlight">professional experienced</span>
@@ -95,7 +98,7 @@
 
 
 
-        <section class="thirdPage">
+        <section class="thirdPage" id="thirdPage">
             <div class="container">
                 <div class="thirdHeader">
                     <p class="thirdText">Service and our projects</p>
@@ -185,7 +188,7 @@
             </div>
         </section>
 
-        <section class="fourPage">
+        <section class="fourPage" id="fourPage">
             <div class="container fourPageContainer">
 
                 <div class="leftSide">
@@ -252,7 +255,7 @@
                     <div class="pricesBlockContainer">
 
                         <div class="priceHeader">
-                            <p>Basics</p>
+                            <p class="headerPriceTxt">Basics</p>
                             <div class="upCircle">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -276,7 +279,7 @@
                     <div class="pricesBlockContainer">
 
                         <div class="priceHeader">
-                            <p>Standart</p>
+                            <p class="headerPriceTxt">Standart</p>
                             <div class="upCircle">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -300,7 +303,7 @@
                     <div class="pricesBlockContainer">
 
                         <div class="priceHeader">
-                            <p>Pro care</p>
+                            <p class="headerPriceTxt">Pro care</p>
                             <div class="upCircle">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +340,7 @@
             </div>
         </section>
 
-        <section class="fivePage">
+        <section class="fivePage" id="fivePage">
             <div class="container fiPageContainer">
                 <img src="assets/contact_woman 1.png" class="womanPh" alt="Woman">
                 <p class="fiMainTxtStyle">Contact us</p>

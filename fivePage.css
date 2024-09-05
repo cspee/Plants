@@ -88,8 +88,6 @@
 
 
 
-
-
 .cityBlock {
     margin-top: 50px;
     position: absolute;
@@ -129,6 +127,36 @@
 }
 
 
+.textChoosin {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 250%;
+    letter-spacing: 0.05em;
+    color: #499a18;
+    position: relative;
+    display: inline-block; /* Для правильной работы псевдоэлемента */
+    transition: color 0.3s ease; /* Плавный переход цвета текста */
+    cursor: pointer;
+}
+
+.textChoosin::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Начальная ширина 0 */
+    height: 1px;
+    background: #717171;
+    transition: width 0.3s ease; /* Плавная анимация изменения ширины */
+}
+
+.textChoosin:hover {
+    color: #717171; /* Цвет текста при наведении */
+}
+
+.textChoosin:hover::after {
+    width: 100%; /* При наведении полоска увеличивается до 100% */
+}
 
 .cityTextSyle p:first-child {
     font-weight: bold;
@@ -203,4 +231,18 @@
         width: 300px;
         height: 50px;
     }
+
+    .chooseCityContainer {
+        width: 300px;
+        font-family: "Inika", serif;
+    }
+
+    .cityBlock {
+        width: 250px;
+        max-height: 150px;
+    }
+
+
+
+
 }
