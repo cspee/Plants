@@ -5,7 +5,6 @@ for (let i = 0; i < btns.length; i++) {
 
     btns[i].addEventListener("click", () => {
         let countBlur = Array.from(btns).filter(x => x.classList.contains('blurred')).length
-        console.log(countBlur);
             if (countBlur === 0 ) {
                 for (let j = 0; j < btns.length; j++) {
                     if ( j !== i) {
@@ -24,7 +23,6 @@ for (let i = 0; i < btns.length; i++) {
                 }
             }
         
-        console.log(countBlur);
 
         let countActive = document.querySelectorAll('.activeBtnFourPage').length
 
@@ -74,14 +72,19 @@ const ulList = document.querySelector('.ulList')
 const burgerContainer = document.querySelector('.burgerContainer')
 const logoContainer = document.querySelector('.logoContainer')
 
-document.addEventListener('DOMContentLoaded', function() {
-    const burgerContainer = document.querySelector('.burgerContainer');
-    const navMenu = document.querySelector('.navMenu');
 
-    burgerContainer.addEventListener('click', function() {
-        navMenu.classList.toggle('active'); // Переключить класс active
+    burgerContainer.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        logoContainer.classList.toggle('hidden') 
     });
-});
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 550) {
+            navMenu.classList.remove('active'); 
+            logoContainer.classList.remove('hidden')
+        }
+    });
+
 
 // function burgerMenu() {
 //     const width = window.innerWidth;

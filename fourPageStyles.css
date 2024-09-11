@@ -109,6 +109,10 @@
 }
 
 .fBtnStyleInRightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
     max-width: 162px;
     font-weight: 700;
     font-size: 20px;

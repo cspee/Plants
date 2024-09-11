@@ -4,17 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
-
     <link id="style" rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="secondPageStyles.css">
     <link rel="stylesheet" href="thirdPageStyles.css">
@@ -37,14 +34,14 @@
 
                 <nav class="navMenu">
                     <ul class="ulList">
-                        <li><a  class="home">Home</a></li>
+                        <li><a class="home">Home</a></li>
                         <!-- onclick="location.href='#secondPage'"  >>>  href='#secondPage'  при обновлении страницы в режиме разработчика с испольованием 
                          scroll-behavior: smooth страница опускатся вниз -->
-                        <li><a href='#secondPage'>About us</a></li>  
+                        <li><a href='#secondPage'>About us</a></li>
                         <li><a href='#thirdPage'>Service</a></li>
-                        <li><a href='#fourPage'>Price</a></li> 
-                        <li><a href='#fivePage' >Contacts</a></li> 
-                        
+                        <li><a href='#fourPage'>Price</a></li>
+                        <li><a href='#fivePage'>Contacts</a></li>
+
                     </ul>
                 </nav>
 
@@ -56,151 +53,295 @@
                 </div>
             </div>
         </header>
-
-        <section class="welcomeSection" id="firstPage">
-            <div class="container welcomeText">
-                <div class="pic">
-                    <img src="assets/leafs2.svg" class="bigLeafs" alt="Leafs">
-                </div>
-                <div class="welcome">
-                    <p class="bigText mainTextPadding">We grow <span class="plantsHighlight"> plants</span> and give you
-                        oxygen</p>
-                    <p class="smallText mainTextPadding">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                        1500s.</p>
-                    <button class="but mainTextPadding">LEARN MORE</button>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <section class="secondPage" id="secondPage">
-            <div class="container secondPageContainer">
-                <div class="secondText">
-                    <p class="secondPageMainText">We are <span class="secondHighlight">professional experienced</span>
-                        gardeners</p>
-                    <!-- текст без ширины расползается а не первой страницы нет -->
-                    <p class="secondPageText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged. </p>
-                </div>
-                <div class="secPic">
-                    <img src="assets/Vasa.png" class="vasa" alt="Vasa">
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <section class="thirdPage" id="thirdPage">
-            <div class="container">
-                <div class="thirdHeader">
-                    <p class="thirdText">Service and our projects</p>
-                    <div class="thirdBtns">
-                        <button class="thirdBtn txtBtnStlThird" data-category="Garden care">Gardens</button>
-                        <button class="thirdBtn txtBtnStlThird" data-category="Lawn care">Lawn</button>
-                        <button class="thirdBtn txtBtnStlThird" data-category="Planting">Planting</button>
+        <main>
+            <section class="welcomeSection" id="firstPage">
+                <div class="container welcomeText">
+                    <div class="pic">
+                        <img src="assets/leafs2.svg" class="bigLeafs" alt="Leafs">
+                    </div>
+                    <div class="welcome">
+                        <p class="bigText mainTextPadding">We grow <span class="plantsHighlight"> plants</span> and give
+                            you
+                            oxygen</p>
+                        <p class="smallText mainTextPadding">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s.</p>
+                        <button class="but mainTextPadding">LEARN MORE</button>
                     </div>
                 </div>
+            </section>
 
-                <div class="thirdPhotos">
-                    <div class="cards" data-category="Garden care">
-                        <img src="assets/ff1.png" class="cardsPhoto" alt="Photo">
-                        <div class="fBorder">
-                            <div class="test">
-                                <p class="txtColor">Garden care</p>
-                                <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+
+            <section class="secondPage" id="secondPage">
+                <div class="container secondPageContainer">
+                    <div class="secondText">
+                        <p class="secondPageMainText">We are <span class="secondHighlight">professional
+                                experienced</span>
+                            gardeners</p>
+                        <!-- текст без ширины расползается а не первой страницы нет -->
+                        <p class="secondPageText">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                            not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged. </p>
+                    </div>
+                    <div class="secPic">
+                        <img src="assets/Vasa.png" class="vasa" alt="Vasa">
+                    </div>
+                </div>
+            </section>
+
+            <section class="thirdPage" id="thirdPage">
+                <div class="container">
+                    <div class="thirdHeader">
+                        <p class="thirdText">Service and our projects</p>
+                        <div class="thirdBtns">
+                            <button class="thirdBtn txtBtnStlThird" data-category="Garden care">Gardens</button>
+                            <button class="thirdBtn txtBtnStlThird" data-category="Lawn care">Lawn</button>
+                            <button class="thirdBtn txtBtnStlThird" data-category="Planting">Planting</button>
+                        </div>
+                    </div>
+
+                    <div class="thirdPhotos">
+                        <div class="cards" data-category="Garden care">
+                            <img src="assets/ff1.png" class="cardsPhoto" alt="Photo">
+                            <div class="fBorder">
+                                <div class="test">
+                                    <p class="txtColor">Garden care</p>
+                                    <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="cards" data-category="Planting">
+                            <img src="assets/ff2.png" class="cardsPhoto" alt="Photo">
+                            <div class="fBorder">
+                                <div class="test">
+                                    <p class="txtColor">Planting</p>
+                                    <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="cards" data-category="Lawn care">
+                            <img src="assets/ff3.png" class="cardsPhoto" alt="Photo">
+
+                            <div class="fBorder">
+                                <div class="test">
+                                    <p class="txtColor">Lawn care</p>
+                                    <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="cards" data-category="Planting">
+                            <img src="assets/ff4.png" class="cardsPhoto" alt="Photo">
+                            <div class="fBorder">
+                                <div class="test">
+                                    <p class="txtColor">Planting</p>
+                                    <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="cards" data-category="Garden care">
+                            <img src="assets/ff5.png" class="cardsPhoto" alt="Photo">
+                            <div class="fBorder">
+                                <div class="test">
+                                    <p class="txtColor">Garden care</p>
+                                    <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="cards" data-category="Planting">
+                            <img src="assets/ff6.png" class="cardsPhoto" alt="Photo">
+                            <div class="fBorder">
+                                <div class="test">
+                                    <p class="txtColor">Planting</p>
+                                    <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="fourPage" id="fourPage">
+                <div class="container fourPageContainer">
+
+                    <div class="leftSide">
+                        <p class="txtPricesF">Prices</p>
+
+                        <div class="fBtnsContainer fBorderForContainerBtns">
+
+
+                            <div id="basicsBtn" class="styleForElemInButton fBorderForBtn">
+                                <div class="styleForElemInButton2">
+                                    <p class="fStyleForTxtInLeftBtn">Basics</p>
+                                    <div class="circle">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
+                                            <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171"
+                                                stroke-width="0.5" stroke-linecap="round" />
+                                            <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="standardBtn" class="styleForElemInButton fBorderForBtn">
+                                <div class="styleForElemInButton2">
+                                    <p class="fStyleForTxtInLeftBtn">Standart</p>
+                                    <div class="circle">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
+                                            <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171"
+                                                stroke-width="0.5" stroke-linecap="round" />
+                                            <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proCareBtn" class="styleForElemInButton fBorderForBtn">
+                                <div class="styleForElemInButton2">
+                                    <p class="fStyleForTxtInLeftBtn">Pro care</p>
+                                    <div class="circle">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
+                                            <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171"
+                                                stroke-width="0.5" stroke-linecap="round" />
+                                            <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="cards" data-category="Planting">
-                        <img src="assets/ff2.png" class="cardsPhoto" alt="Photo">
-                        <div class="fBorder">
-                            <div class="test">
-                                <p class="txtColor">Planting</p>
-                                <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                    <div id="pricesBlock" class="pricesBlock  hidden">
+                        <div class="pricesBlockContainer">
+
+                            <div class="priceHeader">
+                                <p class="headerPriceTxt">Basics</p>
+                                <div class="upCircle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                        <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
+                                            stroke-linecap="round" />
+                                        <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+                                    </svg>
+                                </div>
                             </div>
-
+                            <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages,
+                                and
+                                more recently</p>
+                            <p class="secondTxtInPriceBlock">$15 / per hour</p>
+                            <p class="orderBtn">Order</p>
                         </div>
-
                     </div>
 
-                    <div class="cards" data-category="Lawn care">
-                        <img src="assets/ff3.png" class="cardsPhoto" alt="Photo">
+                    <div id="pricesBlockStand" class="pricesBlock  hidden">
+                        <div class="pricesBlockContainer">
 
-                        <div class="fBorder">
-                            <div class="test">
-                                <p class="txtColor">Lawn care</p>
-                                <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                            <div class="priceHeader">
+                                <p class="headerPriceTxt">Standart</p>
+                                <div class="upCircle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                        <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
+                                            stroke-linecap="round" />
+                                        <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+                                    </svg>
+                                </div>
                             </div>
 
+                            <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages,
+                                and
+                                more recently</p>
+                            <p class="secondTxtInPriceBlock">$25 / per hour</p>
+
+                            <p class="orderBtn">Order</p>
                         </div>
                     </div>
 
-                    <div class="cards" data-category="Planting">
-                        <img src="assets/ff4.png" class="cardsPhoto" alt="Photo">
-                        <div class="fBorder">
-                            <div class="test">
-                                <p class="txtColor">Planting</p>
-                                <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
+                    <div id="pricesBlockPro" class="pricesBlock  hidden">
+                        <div class="pricesBlockContainer">
+
+                            <div class="priceHeader">
+                                <p class="headerPriceTxt">Pro care</p>
+                                <div class="upCircle">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                        <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
+                                            stroke-linecap="round" />
+                                        <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+                                    </svg>
+                                </div>
                             </div>
 
-                        </div>
+                            <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages,
+                                and
+                                more recently</p>
+                            <p class="secondTxtInPriceBlock">$35 / per hour</p>
 
+                            <p class="orderBtn">Order</p>
+                        </div>
                     </div>
 
-                    <div class="cards" data-category="Garden care">
-                        <img src="assets/ff5.png" class="cardsPhoto" alt="Photo">
-                        <div class="fBorder">
-                            <div class="test">
-                                <p class="txtColor">Garden care</p>
-                                <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
-                            </div>
-
+                    <div class="rightSide">
+                        <div class="fContainerOfRightSide">
+                            <p class="fTxtInRightSide">Our best <span class="gardeners">gardeners</span> are ready to
+                                help
+                                you</p>
+                            <a href="tel:+115564467890"  class="fBtnStyleInRightSide">Contact us</a>
                         </div>
 
-                    </div>
-
-                    <div class="cards" data-category="Planting">
-                        <img src="assets/ff6.png" class="cardsPhoto" alt="Photo">
-                        <div class="fBorder">
-                            <div class="test">
-                                <p class="txtColor">Planting</p>
-                                <p class="txtSecondStylesUnderPhoto">Lorem Ipsum has been the industry</p>
-                            </div>
-
-                        </div>
+                        <img class="AAA" src="assets/fLeafs.png" alt="fLeafs">
 
                     </div>
-
-
-
 
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="fourPage" id="fourPage">
-            <div class="container fourPageContainer">
-
-                <div class="leftSide">
-                    <p class="txtPricesF">Prices</p>
-
-                    <div class="fBtnsContainer fBorderForContainerBtns">
+            <section class="fivePage" id="fivePage">
+                <div class="container fiPageContainer">
+                    <img src="assets/contact_woman 1.png" class="womanPh" alt="Woman">
+                    <p class="fiMainTxtStyle">Contact us</p>
 
 
-                        <div id="basicsBtn" class="styleForElemInButton fBorderForBtn">
-                            <div class="styleForElemInButton2">
-                                <p class="fStyleForTxtInLeftBtn">Basics</p>
-                                <div class="circle">
+                    <div class="fiveRightSide">
+                        <div class="fiveCityBtn">
+                            <div class="fiveCityBtnStyle">
+                                <p class="cityTxtBtn">City</p>
+
+                                <div class="circle" id="idCircle">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
@@ -209,194 +350,43 @@
                                         <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
                                             stroke-linecap="round" />
                                     </svg>
+
                                 </div>
                             </div>
+
+
                         </div>
+                        <div class="fiveCityBtn fiveCityBtnActive hidden" id='fiveActiveBtn'>
+                            <div class="fiveCityBtnStyle">
+                                <p class="cityTxtBtn">City</p>
 
-
-                        <div id="standardBtn" class="styleForElemInButton fBorderForBtn">
-                            <div class="styleForElemInButton2">
-                                <p class="fStyleForTxtInLeftBtn">Standart</p>
-                                <div class="circle">
+                                <div class="upCircle">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
-                                        <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171" stroke-width="0.5"
+                                        <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
+                                        <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
                                             stroke-linecap="round" />
-                                        <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
-                                            stroke-linecap="round" />
+                                        <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
                                     </svg>
                                 </div>
                             </div>
+
+
                         </div>
 
-                        <div id="proCareBtn" class="styleForElemInButton fBorderForBtn">
-                            <div class="styleForElemInButton2">
-                                <p class="fStyleForTxtInLeftBtn">Pro care</p>
-                                <div class="circle">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
-                                        <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171" stroke-width="0.5"
-                                            stroke-linecap="round" />
-                                        <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </div>
+
+                        <div class="chooseCityContainer hidden">
+                            <div class="cities">
+                                <p id="canandaiguaBtn" class="textChoosin">Canandaigua, NY</p>
+                                <p id="newYorkBtn" class="textChoosin">New York City</p>
+                                <p id="yonkersBtn" class="textChoosin">Yonkers, NY</p>
+                                <p id="sherrilBtn" class="textChoosin">Sherrill, NY</p>
                             </div>
                         </div>
-
-
-
-                    </div>
-                </div>
-
-                <div id="pricesBlock" class="pricesBlock  hidden">
-                    <div class="pricesBlockContainer">
-
-                        <div class="priceHeader">
-                            <p class="headerPriceTxt">Basics</p>
-                            <div class="upCircle">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
-                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
-                                        stroke-linecap="round" />
-                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages, and
-                            more recently</p>
-                        <p class="secondTxtInPriceBlock">$15 / per hour</p>
-
-                        <p class="orderBtn">Order</p>
-                    </div>
-                </div>
-
-                <div id="pricesBlockStand" class="pricesBlock  hidden">
-                    <div class="pricesBlockContainer">
-
-                        <div class="priceHeader">
-                            <p class="headerPriceTxt">Standart</p>
-                            <div class="upCircle">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
-                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
-                                        stroke-linecap="round" />
-                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages, and
-                            more recently</p>
-                        <p class="secondTxtInPriceBlock">$25 / per hour</p>
-
-                        <p class="orderBtn">Order</p>
-                    </div>
-                </div>
-
-                <div id="pricesBlockPro" class="pricesBlock  hidden">
-                    <div class="pricesBlockContainer">
-
-                        <div class="priceHeader">
-                            <p class="headerPriceTxt">Pro care</p>
-                            <div class="upCircle">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
-                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
-                                        stroke-linecap="round" />
-                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="firstTxtInPriceBlock">Release of Letraset sheets containing Lorem Ipsum passages, and
-                            more recently</p>
-                        <p class="secondTxtInPriceBlock">$35 / per hour</p>
-
-                        <p class="orderBtn">Order</p>
-                    </div>
-                </div>
-
-                <div class="rightSide">
-                    <div class="fContainerOfRightSide">
-                        <p class="fTxtInRightSide">Our best <span class="gardeners">gardeners</span> are ready to help
-                            you</p>
-                        <button class="fBtnStyleInRightSide">Contact us</button>
                     </div>
 
-                    <img class="AAA" src="assets/fLeafs.png" alt="fLeafs">
 
                 </div>
-
-
-
-
-            </div>
-        </section>
-
-        <section class="fivePage" id="fivePage">
-            <div class="container fiPageContainer">
-                <img src="assets/contact_woman 1.png" class="womanPh" alt="Woman">
-                <p class="fiMainTxtStyle">Contact us</p>
-
-
-                <div class="fiveRightSide">
-                    <div class="fiveCityBtn">
-                        <div class="fiveCityBtnStyle">
-                            <p class="cityTxtBtn">City</p>
-
-                            <div class="circle" id="idCircle">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8.00635" r="8" fill="#D9D9D9" />
-                                    <path d="M8.00003 9.00656L6.00003 7.00667" stroke="#717171" stroke-width="0.5"
-                                        stroke-linecap="round" />
-                                    <path d="M8 9.00635L10 7.00635" stroke="#717171" stroke-width="0.5"
-                                        stroke-linecap="round" />
-                                </svg>
-                                    
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="fiveCityBtn fiveCityBtnActive hidden" id = 'fiveActiveBtn'>
-                        <div class="fiveCityBtnStyle">
-                            <p class="cityTxtBtn">City</p>
-
-                            <div class="upCircle">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="#AEA1A1" />
-                                    <path d="M7.99997 7.00003L9.99998 8.99992" stroke="white" stroke-width="0.5"
-                                        stroke-linecap="round" />
-                                    <path d="M8 7L6 9" stroke="white" stroke-width="0.5" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-
-                    
-                    <div class="chooseCityContainer hidden">
-                        <div class="cities">
-                            <p id="canandaiguaBtn" class="textChoosin">Canandaigua, NY</p>
-                            <p id="newYorkBtn" class="textChoosin">New York City</p>
-                            <p id="yonkersBtn" class="textChoosin">Yonkers, NY</p>
-                            <p id="sherrilBtn" class="textChoosin">Sherrill, NY</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
     </div>
 
     <div id="yonkers" class="cityBlock hidden">
@@ -491,29 +481,29 @@
         </div>
     </div>
     </section>
+    </main>
 
+    <footer>
+        <section class="lastPage">
+            <div class="container lastPageCont">
 
-    <section class="lastPage">
-        <div class="container lastPageCont">
+                <div class="lastLeftSide">
+                    <img src="assets/doge.png" alt="">
+                    <p>2022</p>
+                    <p>github</p>
+                </div>
 
-            <div class="lastLeftSide">
-                <img src="assets/doge.png" alt="">
-                <p>2022</p>
-                <p>github</p>
+                <p class="lastMainTxt">Rolling Scopes School</p>
+
+                <div class="lastRightSide">
+                    <img src="assets/inst.png" alt="instImg">
+                    <img src="assets/fb.png" alt="">
+                    <img src="assets/twitter.png" alt="">
+                    <img src="assets/pinterest.png" alt="">
+                </div>
             </div>
-
-            <p class="lastMainTxt">Rolling Scopes School</p>
-
-            <div class="lastRightSide">
-                <img src="assets/inst.png" alt="instImg">
-                <img src="assets/fb.png" alt="">
-                <img src="assets/twitter.png" alt="">
-                <img src="assets/pinterest.png" alt="">
-            </div>
-        </div>
-
-    </section>
-
+        </section>
+    </footer>
     </div>
 
 

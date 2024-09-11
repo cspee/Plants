@@ -1,9 +1,9 @@
 @import url(secondPageStyles.css);
 
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 
 body {
@@ -50,7 +50,6 @@ header {
 
 .logoContainer {
     display: flex;
-    position: relative;
 }
 
 .miniLeaf {
@@ -66,14 +65,14 @@ header {
 
 }
 
-.burgerContainer{
-    display: flex;
+.burgerContainer {
+    display: none;
     gap: 8px;
     flex-direction: column;
 }
 
 .burgerMenu {
-    
+
     border: 2px solid #717171;
     width: 40px;
     height: 0px;
@@ -174,13 +173,40 @@ header {
     filter: blur(4px);
 }
 
+/* .active { так почему то не рабоатет если с такой спецефичностью
+    left: 600px;
+}
+
+.navMenu {
+    left: -500px;
+    position: absolute;
+} */
+
+
+.navMenu.active {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
 
 
 
+
+
+@media screen and (max-width: 550px) {
+    .navMenu {
+        transform: translateX(-200%);
+    }
+
+    .burgerContainer {
+        display: flex;
+        
+    }
+
+}
 
 
 @media screen and (max-width: 1412px) {
-
+    
 
     .welcomeText {
         flex-direction: row-reverse;

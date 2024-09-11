@@ -29,11 +29,9 @@ function showBlock(btn, block) {
         fBtnsContainer.style.gap = '5px'
         activeBlock = block
         activeBtn = btn
-        console.log("РРАБОТА")
     }
     //почемеу НЕ ПОДСКАЗЫВАЕТ МЕТОДЫ КОГДа пишу contains нету его в подсказках btn.classList.contains
     else if (fBtnsContainer.querySelector(".pricesBlock") && btn.classList.contains("styleForElemInButton")) {
-        console.log('ДОМ')
         showBtn(activeBtn, activeBlock)
         showBlock(btn, block)
     }
